@@ -2,7 +2,7 @@ package aranguren.bernadette.Ex3;
 
 public class PurchaseOrderEx3 {
     private int poNumber;
-    private String item;
+    private int quantity;
 
     public int getPoNumber() {
         return poNumber;
@@ -10,14 +10,6 @@ public class PurchaseOrderEx3 {
 
     public void setPoNumber(int poNumber) {
         this.poNumber = poNumber;
-    }
-
-    public String getItem() {
-        return item;
-    }
-
-    public void setItem(String item) {
-        this.item = item;
     }
 
     public int getQuantity() {
@@ -28,23 +20,11 @@ public class PurchaseOrderEx3 {
         this.quantity = quantity;
     }
 
-    public String getUom() {
-        return uom;
-    }
 
-    public void setUom(String uom) {
-        this.uom = uom;
-    }
+    public PurchaseOrderEx3(int quantity, int poNumber) {
 
-    private int quantity;
-    private String uom;
-
-    public PurchaseOrderEx3(String item, int quantity, int poNumber, String uom) {
-
-        this.item = item;
         this.quantity = quantity;
         this.poNumber = poNumber;
-        this.uom = uom;
 
     }
 

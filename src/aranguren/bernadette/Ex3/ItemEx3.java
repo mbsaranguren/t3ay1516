@@ -2,13 +2,16 @@ package aranguren.bernadette.Ex3;
 
 
 public class ItemEx3 {
-
+    private int itemID;
     private String itemname;
     private double price;
+    private String uom;
 
-    public ItemEx3(String _name, double _price) {
-        this.itemname = _name;
-        this.price = _price;
+    public ItemEx3(int itemID, String itemname, double price, String uom) {
+        this.itemID = itemID;
+        this.itemname = itemname;
+        this.price = price;
+        this.uom = uom;
     }
 
     public String getItemname() {
@@ -19,6 +22,14 @@ public class ItemEx3 {
         this.itemname = itemname;
     }
 
+    public int getItemID() {
+        return itemID;
+    }
+
+    public void setItemID(int itemID) {
+        this.itemID = itemID;
+    }
+
     public double getPrice() {
         return price;
     }
@@ -27,10 +38,21 @@ public class ItemEx3 {
         this.price = price;
     }
 
+    public String getUom() {
+        return uom;
+    }
+
+    public void setUom(String uom) {
+        this.uom = uom;
+    }
 
 
 
 
-}
+    }
+
+
+
+
 
 
